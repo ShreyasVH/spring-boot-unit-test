@@ -13,6 +13,9 @@ pipeline {
               sh 'java -version'
               sh 'mvn --version'
               sh 'ls $HOME/programs'
+              sh '''
+                  which docker
+              '''
           }
         }
       }
