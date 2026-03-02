@@ -16,5 +16,13 @@ pipeline {
           }
         }
       }
+
+      stage("Test") {
+        steps {
+         script {
+             sh 'mvn clean test'
+         }
+        }
+      }  
     }
 }
