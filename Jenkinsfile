@@ -12,6 +12,7 @@ pipeline {
             echo env.BRANCH_NAME
               sh 'java -version'
               sh 'mvn --version'
+              sh 'ls $HOME/programs'
           }
         }
       }
