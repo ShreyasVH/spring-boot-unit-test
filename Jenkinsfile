@@ -10,7 +10,6 @@ pipeline {
         steps {
           script {
             echo env.BRANCH_NAME
-
               sh 'java -version'
               sh 'mvn --version'
           }
